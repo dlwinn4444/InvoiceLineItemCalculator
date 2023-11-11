@@ -1,4 +1,4 @@
-#Dwayne Winn CIS362 Invoice Line Item Calator"
+#Dwayne Winn CIS362 Invoice Line Item Caator"
 
 #start Main function 
 def main():
@@ -19,7 +19,7 @@ def main():
         print()
         print("Price: $", f"{price: .2f}") 
         print("Quantity: ", quantity)
-        print("Total: $y",  f"{total: .2f}")
+        print("Total: $",  f"{total: .2f}")
         #get user input for answer
         answer = input("Enter another line item? (y/n): ")
         #caculate grand toital
@@ -28,6 +28,8 @@ def main():
     print()   
     print("Grand total : $", f"{g_total: .2f}")  
     print("Thank you!") 
+    
+
  # user input price function
 def i_price():
      while True:
@@ -35,7 +37,9 @@ def i_price():
             price = float(input("Enter price: "))
             return price
          except ValueError:
-             print("Invaild decimal.//(0.00) Please try again.")       
+             print("Invaild decimal.(0.00) Please try again.")    
+             print()
+
 #user input quantity function    
 def i_quantity():
     while True:
@@ -44,6 +48,7 @@ def i_quantity():
           return quantity
        except ValueError:
           print("Invaild integer. Please try again.")
+          print()
 
 if __name__== "__main__":
    main()
